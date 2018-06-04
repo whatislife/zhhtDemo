@@ -14,6 +14,11 @@ import com.zhht.util.SignatureUtil;
  */
 public class Test {
 	
+	
+	public void queryParkMessage(){
+		
+		
+	}
 	public static void main(String[] args) {
 //		String url = "http://localhost:8083/zhht_cps/cps/park/queryParkMessage";
 //		//测试阶段使用
@@ -34,7 +39,7 @@ public class Test {
 		//测试阶段使用
 		String tokenKey1="RlE3RUdONUlOQVoyWUZHVkZQN0lHUUlSUUJQNU9GTzFUVlFSWVBWUEFJWERQTks0UUFVRVBXV0dVRkhVSUtDRjdZRENISFZW";
 		String tokenKey2="NFVDSlQwNExMUVVDMkEzRzlWSFNETFFLVDdOS0ozWjBOS1VYSEhDWVhYVVkxV0tBSVNSTlFSV0lZSktYRTJYR05PSFVZSjdT";
-		String source = "{'parkCode': 'PA2018110','beginTime': '2018-09-01 09:04:27','endTime': '2018-08-01 09:08:27'}";
+		String source = "{'parkCode': 'PA2018110','beginTime': '2017-12-07 16:06:57','endTime': '2017-12-20 16:06:57'}";
 		try {
 			String token = SignatureUtil.getMD5(SignatureUtil.getMD5(source + tokenKey1) + tokenKey2);
 			System.out.println(token);
